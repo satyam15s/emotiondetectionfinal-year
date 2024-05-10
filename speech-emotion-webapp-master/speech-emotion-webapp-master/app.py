@@ -10,9 +10,13 @@ import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 from PIL import Image
 from melspec import plot_colored_polar, plot_melspec
+model_path = "model3.h5"
+
+# Load the model
+model = load_model(model_path)
 
 # load models
-model = load_model("model3.h5")
+
 
 # constants
 starttime = datetime.now()
